@@ -1,0 +1,403 @@
+@font-face{
+
+    font-family: "mont";
+    src: url("../font/Montserrat/static/Montserrat-SemiBold.ttf");
+
+    font-family: "bold" ;
+    src: url("../font/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+*{
+margin: 0;
+padding: 0;
+font-family: "mont";
+}
+
+
+
+section{
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-block: 20px;
+    background-color: rgba(0, 0, 0, 0.292);
+    position: absolute;
+}
+
+
+.logo ul li{
+    display: inline;
+    list-style-type: none;
+
+}
+
+.logo h1{
+    color: white;
+}
+
+.logo ul li a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.logo ul li a:hover{
+    text-decoration: none;
+    padding: 20px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+.logo ul li:nth-child(1) a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    padding-bottom: 35px;
+    color: white;
+    background-color: black;
+}
+
+.logo a::before{
+    content: "";
+    height: 5px;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    background-color:black;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.logo a:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.res{
+    position: absolute;
+}
+
+.res ul{
+    display: none;
+}
+
+.res input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"] + ul li{
+    display: block;
+}
+
+
+.burger i{
+    color: white;
+}
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 40px;
+
+}
+.main h1{
+    font-size: 45px;
+}
+
+.main h1, p{
+    margin-top: 30px;
+}
+
+.text{
+    /* background-color: aquamarine; */
+ display: flex;
+ flex-direction: column;
+ width: 60%;
+ margin-top: 50px;
+ font-size: 20px;
+
+}
+
+.text h1{
+    color: white;
+}
+
+.text h1 + h1{
+    color: rgb(255, 225, 0);
+}
+
+.text p {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.button1{
+    background-color: white;
+    padding: 20px;
+    padding-inline: 40px;
+    transition: 0.5s;
+}
+
+.button2{
+    background-color: rgb(255, 225, 0);
+    padding: 20px;
+    padding-inline: 40px;
+    transition: 0.5s;
+}
+
+.button1:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 8px  white;
+    
+}
+
+.button2:hover{
+    border: 1px solid rgb(255, 225, 0);
+    background-color: black;
+    color: rgb(255, 225, 0);
+    box-shadow: 0 0 8px  rgb(255, 225, 0);
+    
+}
+
+.button3{
+    width: 100px;
+    background-color: rgb(255, 225, 0);
+    padding: 20px;
+    text-align: center;
+    padding-inline: 40px;
+    transition: 0.5s;
+}
+
+.button3:hover{
+
+    border: 1px solid rgb(255, 225, 0);
+    background-color: white;
+    color: rgb(255, 225, 0);
+    box-shadow: 0 0 4px  rgba(0, 0, 0, 0.649)
+
+    
+}
+
+.btn{
+    display: flex;
+    gap: 10px;
+    /* background-color: aquamarine; */
+    margin-top: 20px;
+    width: 60%;
+}
+
+
+
+.section2{
+    display: flex;
+    padding: 35px;
+    
+
+}
+
+.aboutimg{
+    max-width: 700px;
+    height: 473px;
+    background-image: url("../images/about-img.jpg");
+    position: relative;
+}
+
+.over{
+    background-color: white;
+    width: 45%;
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.51);
+    height: fit-content;
+    margin-top: 50px;
+    right: 150px;
+    position: absolute;
+
+}
+
+.over h1{
+    font-family: "bold";
+}
+
+.over h1, p, .button3{
+    margin-top: 50px;
+    
+
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    background-color: black;
+    color: white;
+}
+
+.service h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.b1{
+    background-color: white;
+    width: 400px;
+    height: 460px;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 h1{
+    margin-bottom: 10px;
+}
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.clients h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.cl{
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cl h1, p{
+    margin-top: 20px;
+}
+
+.git h1{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.git{
+    background-image: url("../images/contact-bg.jpg");
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.git form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.git input{
+    width: 500px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.git input:nth-child(4){
+    height: 90px;
+}
+
+.git .button3{
+
+    margin-bottom: 40px;
+}
+
+.guards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.guards .button3:hover{
+    background-color: transparent;
+}
+
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 30px;
+    color: white;
+    justify-content: space-between;
+}
+
+footer div{
+    max-width: 300px;
+}
+
+footer div + div + div + div h1, .eye{
+    margin-bottom: 30px;
+}
+
+.eye{
+    max-width: 200px;
+    background-color: white;
+    color: grey;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.sub{
+    max-width: 140px;
+    background-color:  rgb(255, 225, 0) ;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
